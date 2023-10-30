@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Montserrat;
 }
 .wrap{
     width: 100%;
@@ -14,11 +15,15 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .Coffemashine_maincontainer{
             width: 420px;
             height: 450px;
             background-color: #000;
             border-radius: 20px 20px 0px 0px;
+            position: relative;
+            display: flex;
+            justify-content: center;
         }
         .Coffemashine_cupPlace{
             width: 420px;
@@ -89,5 +94,92 @@
         .coffePart2{
             background-color: #362515;
         }
+        .Coffemashine_controlPanel{
+            width: 171px;
+            height: 243px;
+            border-radius: 20px;
+            background-color: #000;
+            border: #fff 3px solid;
+            position: absolute;
+            top: -50px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+        .Coffemashine_controlPanel_time{
+            font-size: 36px;
+            font-weight: 600;
+        }
+        .Coffemashine_controlPanel_day{
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        .Coffemashine_controlPanel_date{
+            font-size: 14px;
+            font-weight: 300;
+            width: 110px;
+            text-align: center;
+            margin-top: 10px;
+        }
+        .Coffemashine_controlPanel_button{
+            width: 110px;
+            height: 37px;
+            border: #fff 3px solid;
+            border-radius: 7px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+        .Coffemashine_controlPanel_triangle{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 67px 30px 0 0;
+            border-color: #313131 transparent transparent transparent;
+            position: absolute;
+            bottom: -69px;
+        }
+    }
+    .coffemashineWaterContainer{
+        width: 97px;
+        height: 439px;
+        border: #000 3px solid;
+        border-radius: 20px 20px 0px 20px ;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+
+        //50px = 100ml
+        .coffemashineWater{
+            width: 100%;
+            height: 400px;
+            background-color: rgba(174, 190, 245, 0.57);
+            border-radius: 0px 0px 0px 20px ;
+        }
+        .coffemashine_waterCount_hr{
+            width: 40px;
+            height: 3px;background-color: #000;
+        }
+        .coffemashine_waterCount_nomber{
+            font-size: 14px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+        .coffemashine_waterCount{
+            position: absolute;
+        }
+        .coffemashine_waterCount_el{
+            margin-bottom: 55px;
+        }
+
+        
     }
 }
