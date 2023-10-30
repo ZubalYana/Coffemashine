@@ -11,10 +11,83 @@
   justify-content: center;
   align-items: center;
 }
-
-.Coffemashine_maincontainer {
+.wrap .Coffemashine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .Coffemashine .Coffemashine_maincontainer {
   width: 420px;
-  height: 493px;
+  height: 450px;
   background-color: #000;
   border-radius: 20px 20px 0px 0px;
+}
+.wrap .Coffemashine .Coffemashine_cupPlace {
+  width: 420px;
+  height: 70px;
+  background-color: #676767;
+  border-left: 9px #313131 solid;
+  border-right: 9px #313131 solid;
+  border-bottom: 22px #313131 solid;
+}
+.wrap .Coffemashine .Coffemashine_bottomPart {
+  width: 386px;
+  height: 26px;
+  background-color: #000;
+  border-radius: 0px 0px 9px 9px;
+}
+.wrap .Coffemashine .Coffemashine {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .Coffemashine .Coffemashine_coffeContainer_littleTopPart {
+  width: 45px;
+  height: 8px;
+  border-radius: 5px 5px 0 0;
+  background-color: #1E1E1E;
+}
+.wrap .Coffemashine .Coffemashine_coffeContainer_TopPart {
+  width: 146px;
+  height: 14px;
+  background-color: #000;
+}
+.wrap .Coffemashine .Coffemashine_coffeContainer_coffePart {
+  width: 146px;
+  height: 54px;
+  border: #000 3px solid;
+  border-radius: 0px 0px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.wrap .Coffemashine .Coffemashine_coffeContainer_coffeNonPart {
+  width: 140px;
+  height: 10px;
+  background-color: #fff;
+  display: none;
+}
+.wrap .Coffemashine .Coffemashine_coffeContainer_coffe {
+  background-color: #41250C;
+  width: 100%;
+  height: 50px;
+  border-radius: 0px 0px 9px 9px;
+}
+.wrap .Coffemashine .Coffemashine_coffeContainer_bottomPart {
+  width: 111px;
+  height: 10px;
+  background-color: #000;
+}
+.wrap .Coffemashine .Coffemashine_coffeContainers {
+  width: 420px;
+  display: flex;
+  justify-content: space-around;
+}
+.wrap .Coffemashine .Coffemashine_coffeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrap .Coffemashine .coffePart2 {
+  background-color: #362515;
 }/*# sourceMappingURL=style.css.map */
