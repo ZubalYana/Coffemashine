@@ -6,6 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js' integrity='sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==' crossorigin='anonymous'></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css' integrity='sha512-KOWhIs2d8WrPgR4lTaFgxI35LLOp5PRki/DxQvb7mlP29YZ5iJ5v8tiLWF7JLk5nDBlgPP1gHzw96cZ77oD7zQ==' crossorigin='anonymous'/>
 </head>
 <body>
     <div class="wrap">
@@ -59,10 +61,54 @@
             </div>
             <div class="Coffemashine_maincontainer">
                 <div class="Coffemashine_controlPanel">
-                    <div class="Coffemashine_controlPanel_time">17:50</div>
-                    <div class="Coffemashine_controlPanel_day">Monday</div>
-                    <div class="Coffemashine_controlPanel_date">The 30th of October</div>
+                    <div class="Coffemashine_controlPanel_screen1">
+                    <div class="Coffemashine_controlPanel_time"></div>
+                    <div class="Coffemashine_controlPanel_day">One more cup?</div>
+                    <i class="fa-solid fa-mug-saucer coffeIcon"></i>
                     <div class="Coffemashine_controlPanel_button">Make coffe</div>
+                </div>
+                <div class="Coffemashine_controlPanel_screen2 Coffemashine_controlPanel_screen">
+
+                    <div class="Coffemashine_controlPanel_arrows">
+                        <i id="screen2_left" class="fa-solid fa-chevron-left"></i>
+                        <i id="screen2_right"  class="fa-solid screen_right fa-chevron-right"></i>
+                    </div>
+                    <div class="coffeImgContainer">
+                            <img class="coffe_img" src="./img/espresso.png" alt="">
+                        </div>
+                            <h5>Espresso</h5>
+                            <button>Choose</button>
+
+                </div>
+                <div class=" Coffemashine_controlPanel_screen3 Coffemashine_controlPanel_screen ">
+                    <div class="Coffemashine_controlPanel_arrows">
+                        <i id="screen3_left" class="fa-solid fa-chevron-left"></i>
+                        <i id="screen3_right" class="fa-solid screen_right fa-chevron-right"></i>
+                    </div><div class="coffeImgContainer">
+                            <img class="coffe_img" src="./img/late.png" alt=""></div>
+                            <h5>Latte</h5>
+                            <button>Choose</button>
+                </div>
+
+                <div class=" Coffemashine_controlPanel_screen4 Coffemashine_controlPanel_screen ">
+                    <div class="Coffemashine_controlPanel_arrows">
+                        <i id="screen4_left" class="fa-solid fa-chevron-left"></i>
+                        <i id="screen4_right" class="fa-solid screen_right fa-chevron-right"></i>
+                    </div><div class="coffeImgContainer">
+                            <img class="coffe_img" src="./img/americano.png" alt=""></div>
+                            <h5>Americano</h5>
+                            <button>Choose</button>
+                </div>
+
+                <div class=" Coffemashine_controlPanel_screen5 Coffemashine_controlPanel_screen ">
+                    <div class="Coffemashine_controlPanel_arrows">
+                        <i id="screen5_left" class="fa-solid fa-chevron-left"></i>
+                        <i id="screen5_right" class="fa-solid screen_right fa-chevron-right"></i>
+                    </div><div class="coffeImgContainer">
+                            <img class="coffe_img" src="./img/cappuccino.png" alt=""></div>
+                            <h5>Cappuccino</h5>
+                            <button>Choose</button>
+                </div>
                     <div class="Coffemashine_controlPanel_triangle"></div>
                 </div>
             </div>
