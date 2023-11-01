@@ -61,3 +61,9 @@ $('#screen5_left').click(function(){
     $('.Coffemashine_controlPanel_screen5').css('display', 'none')
     $('.Coffemashine_controlPanel_screen4').css('display', 'flex')
 })
+
+
+$('.choose_button').click(function(){
+    $('.Coffemashine_controlPanel_coffeChoose').css('display', 'none')
+    $('.Coffemashine_controlPanel_coffeMaking').css('display', 'flex')
+})

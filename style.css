@@ -137,14 +137,25 @@
   margin-top: 20px;
   cursor: pointer;
 }
-.wrap .Coffemashine .Coffemashine_controlPanel_triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 67px 30px 0 0;
-  border-color: #313131 transparent transparent transparent;
+.wrap .Coffemashine .Coffemashine_controlPanel_pourCoffe {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  bottom: -69px;
+  bottom: -78px;
+}
+.wrap .Coffemashine .Coffemashine_controlPanel_pourCoffe_top {
+  width: 100px;
+  height: 40px;
+  border-radius: 0 0 12px 12px;
+  background-color: #313131;
+}
+.wrap .Coffemashine .Coffemashine_controlPanel_pourCoffe_bottom {
+  width: 20px;
+  height: 35px;
+  border-radius: 0 0 5px 5px;
+  background-color: #676767;
 }
 .wrap .Coffemashine .Coffemashine_controlPanel_screen1 {
   width: 100%;
@@ -172,11 +183,6 @@
   width: 100px;
   margin-bottom: 30px;
 }
-.wrap .Coffemashine .Coffemashine_controlPanel_screen h5 {
-  font-size: 18px;
-  font-weight: 600;
-  margin-top: 0px;
-}
 .wrap .Coffemashine .Coffemashine_controlPanel_screen button {
   width: 80px;
   height: 40px;
@@ -202,14 +208,40 @@
   cursor: pointer;
 }
 .wrap .Coffemashine .screen_right {
-  margin-left: 110px;
+  margin-left: 120px;
 }
 .wrap .Coffemashine .coffeImgContainer {
   width: 100%;
-  height: 50%;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+}
+.wrap .Coffemashine .Coffemashine_controlPanel_screen h5 {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap .Coffemashine .choose_button_container {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.wrap .Coffemashine_controlPanel_coffeMaking {
+  width: 100%;
+  height: 100%;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .wrap .coffemashineWaterContainer {
   width: 97px;
