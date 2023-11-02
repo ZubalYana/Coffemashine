@@ -67,3 +67,196 @@ $('.choose_button').click(function(){
     $('.Coffemashine_controlPanel_coffeChoose').css('display', 'none')
     $('.Coffemashine_controlPanel_coffeMaking').css('display', 'flex')
 })
+
+
+$('.Coffemashine_controlPanel_coffeMaking_cupSizeBtn').click(function(){
+    $('.Coffemashine_controlPanel_coffeMaking').css('display', 'none')
+    $('.Coffemashine_controlPanel_coffeMakingProgress').css('display', 'flex')
+
+})
+
+$('#cupSize50ml').click(function(){
+    changeWaterLevel(50);
+});
+
+$('#cupSize100ml').click(function(){
+    changeWaterLevel(100);
+});
+
+$('#cupSize150ml').click(function(){
+    changeWaterLevel(150);
+});
+
+$('#cupSize200ml').click(function(){
+    changeWaterLevel(200);
+});
+
+function changeWaterLevel(amount) {
+    let coffemashineWater = $('.coffemashineWater');
+    let currentHeight = parseInt(coffemashineWater.css('height'));
+
+    if (currentHeight - amount <= 0) {
+        alert('Water is running out!'); 
+        currentHeight = 0;
+    } else {
+        currentHeight -= amount; 
+    }
+
+    coffemashineWater.css('height', currentHeight + 'px');
+}
+
+$('#cupSize50ml').click(function(){
+  ;
+    $('.cup').css('width', '70px');
+    $('.cup').css('margin-left', '15px');
+    setTimeout(() => {
+
+        $('.cup').css('display', 'flex');
+        changeWaterLevel(0.5)
+    }, 1000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+    }, 4000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '0px');
+    }, 8000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_coffeMakingProgress').css('display', 'none');
+        $('.Coffemashine_controlPanel_coffeReady').css('display', 'flex');
+    }, 9000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_coffeReady').css('display', 'none');
+        $('.Coffemashine_controlPanel_coffeChoose').css('display', 'flex');
+    }, 12000);
+
+
+});
+
+
+$('#cupSize100ml').click(function(){
+    
+      $('.cup').css('width', '100px');
+      $('.cup').css('margin-left', '20px');
+
+      setTimeout(() => {
+  
+          $('.cup').css('display', 'flex');
+          changeWaterLevel(1)
+      }, 1000);
+  
+      setTimeout(() => {
+          $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+      }, 4000);
+  
+      setTimeout(() => {
+          $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '0px');
+      }, 8000);
+  
+      setTimeout(() => {
+          $('.Coffemashine_controlPanel_coffeMakingProgress').css('display', 'none');
+          $('.Coffemashine_controlPanel_coffeReady').css('display', 'flex');
+      }, 9000);
+  
+      setTimeout(() => {
+          $('.Coffemashine_controlPanel_coffeReady').css('display', 'none');
+          $('.Coffemashine_controlPanel_coffeChoose').css('display', 'flex');
+      }, 12000);
+  });
+  
+
+  
+$('#cupSize150ml').click(function(){
+    
+    $('.cup').css('width', '130px');
+    $('.cup').css('margin-left', '24px');
+
+    setTimeout(() => {
+
+        $('.cup').css('display', 'flex');
+        changeWaterLevel(1.5)
+    }, 1000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+    }, 4000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '0px');
+    }, 8000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_coffeMakingProgress').css('display', 'none');
+        $('.Coffemashine_controlPanel_coffeReady').css('display', 'flex');
+    }, 9000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_coffeReady').css('display', 'none');
+        $('.Coffemashine_controlPanel_coffeChoose').css('display', 'flex');
+    }, 12000);
+});
+
+
+
+
+$('#cupSize200ml').click(function(){
+    
+    $('.cup').css('width', '150px');
+    $('.cup').css('margin-left', '30px');
+
+    setTimeout(() => {
+
+        $('.cup').css('display', 'flex');
+        changeWaterLevel(2)
+    }, 1000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+    }, 4000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '0px');
+    }, 8000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_coffeMakingProgress').css('display', 'none');
+        $('.Coffemashine_controlPanel_coffeReady').css('display', 'flex');
+    }, 9000);
+
+    setTimeout(() => {
+        $('.Coffemashine_controlPanel_coffeReady').css('display', 'none');
+        $('.Coffemashine_controlPanel_coffeChoose').css('display', 'flex');
+    }, 12000);
+});
+
+
+
+// $('#cupSize100ml').click(function(){
+//     $('.cup').css('width', '100px');
+//     $('.cup').css('margin-left', '20px');
+
+//     setTimeout(() => {
+//         $('.cup').css('display', 'flex');
+//     }, 1000);
+
+//     setTimeout(() => {
+//         $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+//     }, 4000);
+
+//     setTimeout(() => {
+//         $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '0px');
+//     }, 8000);
+
+//     setTimeout(() => {
+//         $('.Coffemashine_controlPanel_coffeMakingProgress').css('display', 'none');
+//         $('.Coffemashine_controlPanel_coffeReady').css('display', 'flex');
+//     }, 9000);
+
+//     setTimeout(() => {
+//         $('.Coffemashine_controlPanel_coffeReady').css('display', 'none');
+//         $('.Coffemashine_controlPanel_screen1').css('display', 'flex');
+//     }, 12000);
+// });
