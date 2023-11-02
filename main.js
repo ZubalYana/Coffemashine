@@ -96,7 +96,6 @@ function changeWaterLevel(amount) {
     let currentHeight = parseInt(coffemashineWater.css('height'));
 
     if (currentHeight - amount <= 0) {
-        alert('Water is running out!'); 
         currentHeight = 0;
     } else {
         currentHeight -= amount; 
@@ -117,6 +116,9 @@ $('#cupSize50ml').click(function(){
 
     setTimeout(() => {
         $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+
+        let pouringSound = document.getElementById('pouringSound');
+        pouringSound.play();
     }, 4000);
 
     setTimeout(() => {
@@ -150,6 +152,8 @@ $('#cupSize100ml').click(function(){
   
       setTimeout(() => {
           $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+          let pouringSound = document.getElementById('pouringSound');
+          pouringSound.play();
       }, 4000);
   
       setTimeout(() => {
@@ -182,6 +186,8 @@ $('#cupSize150ml').click(function(){
 
     setTimeout(() => {
         $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+        let pouringSound = document.getElementById('pouringSound');
+        pouringSound.play();
     }, 4000);
 
     setTimeout(() => {
@@ -215,6 +221,8 @@ $('#cupSize200ml').click(function(){
 
     setTimeout(() => {
         $('.Coffemashine_controlPanel_pourCoffe_coffe').css('height', '170px');
+        let pouringSound = document.getElementById('pouringSound');
+        pouringSound.play();
     }, 4000);
 
     setTimeout(() => {

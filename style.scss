@@ -449,5 +449,50 @@
     .Coffemashine_controlPanel_waterIsRunningOut{
         width: 100%;
         height: 100vh;
+        display: none;
+        justify-content: center;
+        align-items: center;
     }
+    .WaterNoneChat{
+        position: absolute;
+        right: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        top: 50px;
+    }
+    .WaterNoneChat_message{
+        width: 400px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        border: 4px #41250C solid;
+        color: #41250C;
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 20px;
+        flex-direction: column;
+        padding: 10px;
+        margin-bottom: 30px;
+    }
+    .WaterNoneChat_message2_respond{
+        width: 200px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        border: 4px #41250C solid;
+        color: #41250C;
+        background-color: rgb(163, 118, 79);
+        font-size: 18px;
+        font-weight: 700;
+        border-radius: 20px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .WaterNoneChat_message2_respond i{
+        margin-right: 10px;
+
+    }
+
+
 }
