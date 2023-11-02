@@ -474,4 +474,13 @@
 }
 .wrap .WaterNoneChat_message2_respond i {
   margin-right: 10px;
+}
+.wrap #WaterNoneChat_message1 {
+  display: none;
+}
+.wrap #WaterNoneChat_message2 {
+  display: none;
+}
+.wrap .WaterNoneChat_message2_respond {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

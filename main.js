@@ -96,7 +96,28 @@ function changeWaterLevel(amount) {
     let currentHeight = parseInt(coffemashineWater.css('height'));
 
     if (currentHeight - amount <= 0) {
+        let messageAudio = document.getElementById('messageAudio');
+        let messageRespondAudio = document.getElementById('messageRespondAudio');
+
+        setTimeout(() => {
+            $('#WaterNoneChat_message1').css('display', 'flex')
+            messageAudio.play();
+        }, 13000);
+        setTimeout(() => {
+            $('#WaterNoneChat_message2').css('display', 'flex')
+            messageAudio.play();
+        }, 16000);
+        setTimeout(() => {
+            $('.WaterNoneChat_message2_respond').css('display', 'flex')
+
+        }, 19000);
         currentHeight = 0;
+
+        $('.WaterNoneChat_message2_respond').click(function(){
+            messageRespondAudio.play();
+            $('.WaterNoneChat').css('display', 'none')
+            $('.coffemashineWater').css('height', '400px');
+        })
     } else {
         currentHeight -= amount; 
     }
