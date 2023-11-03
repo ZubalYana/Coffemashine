@@ -346,6 +346,9 @@
   font-size: 18px;
   font-weight: 700;
 }
+.wrap .Coffemashine .Coffemashine_coffeContainer_coffe {
+  transition: 2s height ease;
+}
 .wrap .Coffemashine_controlPanel_coffeMaking {
   width: 100%;
   height: 100%;

@@ -356,6 +356,9 @@
             font-size: 18px;
             font-weight: 700;
           }
+          .Coffemashine_coffeContainer_coffe{
+            transition: 2s height ease;
+        }
           
     }
     .Coffemashine_controlPanel_coffeMaking{
@@ -408,6 +411,7 @@
             color: #ffffff;
             text-shadow: 4px 4px 2px #8b6747;
         }
+
 
     }
     .coffemashineWaterContainer{
