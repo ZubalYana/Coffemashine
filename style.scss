@@ -508,4 +508,22 @@
     }
 
 
+    .backGround{
+        position: absolute;
+        z-index: -2;
+        width: 100%;
+        height: 100vh;
+    }
+    .backGround_wall{
+        width: 100%;
+        height: 70vh;
+        background-color: rgb(247, 235, 224);
+    }
+    .backGround_table{
+        width: 100%;
+        height: 30vh;
+        background-color: rgb(71, 55, 41);
+    }
+
+
 }
